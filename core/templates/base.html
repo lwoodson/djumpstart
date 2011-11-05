@@ -1,0 +1,43 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL }}css/reset.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL }}css/text.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL }}css/960.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="{{ STATIC_URL}}css/demo.css" />
+  <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css" type="text/css" media="all" charset="utf-8">
+</head>
+<body>
+  <div class="container_12">
+    <div class="grid_12">
+      <h1>Djumpstarting Development</h1>
+    </div>
+    <div class="clear"></div>
+    <div class="grid_8">
+      <p>Djumpstart is a django application base for a common application stack.
+      To use it, you will need to do the following:</p>
+      <ul>
+        <li>Modify the database settings in env_settings.py</li>
+        <li>Change ROOT_URLCONF in settings.py</li>
+        <li>Modify the fabfile to suit the production environment</li>
+        <li>Modify base.html in core/templates</li>
+        <li>Modify index.html in core/templates</li>
+        <li>
+      </ul>
+    </div>
+    <div class="grid_4">
+      Tools added at startup:
+      <ul>
+        <li>pep8</li>
+        <li>pylint</li>
+        <li>nose</li>
+        <li>nose-django</li>
+        <li>south</li>
+        <li>django-debug-toolbar</li>
+      </ul>
+    </div>
+    {% block content %}
+      block content
+    {% endblock %}
+  </div>
+</body>
+</html>
